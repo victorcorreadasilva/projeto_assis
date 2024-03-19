@@ -2413,6 +2413,105 @@ video {
   height: 450px;
 }
 
+h1, h2, h3, h4 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity));
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+body {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    max-width: 1536px;
+  }
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+p{
+  max-width: 800px;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity))
+}
+
+div, ul, ol {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul, ol{
+  max-width: 600px;
+  list-style-type: disc;
+  margin-left: 2.5rem
+}
+
+img{
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
