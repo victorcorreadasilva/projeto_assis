@@ -8,15 +8,15 @@
 
 h1, h2, h3, h4{
   @apply 
-    text-blue-950 
-    text-center 
-    mx-10
-    my-5
+    mb-1
+    mt-10
     font-serif
+    font-medium	
 }
 
 h1{
   @apply 
+    text-center 
     text-4xl
 }
 
@@ -37,43 +37,62 @@ h4{
 
 body{
   @apply
+  text-blue-950 
+    font-serif
     container 
     mx-auto
-    font-serif
+    px-40
+    grid
+    grid-cols-1
+    col-auto
+    shadow-2xl 
 }
 
 p{
-  max-width: 800px;
-
   @apply 
-    text-blue-950 
-    text-center 
+    text-justify 
     mt-2
     font-serif
     items-center
     justify-center
-    text-blue-950 
-}
-
-div, ul, ol{
-  @apply
-    flex 
-    flex-col 
-    items-center 
-    justify-center
-    mt-2
 }
 
 ul, ol{
-  max-width: 600px;
+  /* max-width: 600px; */
   list-style-type: disc;
 
   @apply
+    items-center 
+    justify-center
+    mt-2
     ml-10
-    text-blue-950 
+    font-light	
+}
+
+ol{
+  list-style-type: decimal;
+}
+
+a {
+  @apply
+    text-black
+    hover:shadow-xl 
 }
 
 img{
   @apply
-
+  rounded-lg 
+  shadow-xl
+  hover:shadow-2xl 
+  m-10
+  container 
+  mx-auto
+  px-0
+  grid
+  grid-cols-1
+  col-auto
+  size-[80%]
+  hover:size-[100%]
+  active:size-[110%]
+  min-h-40
 }
