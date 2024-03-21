@@ -76,7 +76,7 @@ ol{
 a {
   @apply
     text-black
-    hover:shadow-xl 
+    hover:shadow-xl
 }
 
 img{
