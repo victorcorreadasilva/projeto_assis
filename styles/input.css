@@ -2,71 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
-.h-450 {
-    height: 450px;
-  }
+.tabela-7-1{
+  height: 200px;
+  width: 700px;
+  padding: auto;
+}
+
+.rodape{
+  @apply
+   mt-5 
+   p-10 
+   bg-[#F0F0F0]
+}
+
+.ajuste_de_pagina_imagens_center
+{
+  @apply
+    flex 
+    flex-col 
+    items-center 
+    pt-10
+}
+
+.imagens{
+  @apply
+  flex
+  items-center
+}
+
+.topo_topo{
+  @apply
+  bg-[#ffffff] 
+   pb-10 
+   pt-8
+   mx-5
+   rounded-t-3xl
+   flex 
+   flex-col px-5 
+}
+
+.topo{
+  @apply
+  bg-[#F4F3F6] 
+   pb-10 
+   pt-10
+   rounded-t-3xl
+   flex 
+   flex-col px-5 
+   mb-10
+}
+
+.corpo_interior{
+  @apply
+    container 
+    px-8
+    py-1
+}
+
+.corpo_interior_lista{
+  @apply
+    container 
+    px-10
+    py-1
+}
+
+html{
+  @apply
+    text-black
+    font-sans 
+    tracking-normal
+    /* bg-[#FFFFFF] */
+}
+
+p, ul, ol{
+  @apply 
+    text-justify 
+    items-center
+    justify-center 
+    m-2
+    font-normal
+}
 
 h1, h2, h3, h4{
   @apply 
-    mb-1
-    mt-10
-    font-serif
-    font-medium	
+    mb-1 
+    mt-3
+    font-medium
 }
 
 h1{
   @apply 
-    text-center 
     text-4xl
+    mx-5
+    mt-4
 }
 
 h2{
   @apply 
     text-3xl
+    bg-[#F0F0F0]
+    border-[#F0F0F0]
+    mx-2
+    shadow-md 
 }
 
 h3{
   @apply 
     text-2xl
+    bg-[#F0F0F0]
+    border-[#F0F0F0]
+    mx-2
+    shadow-md 
 }
 
 h4{
   @apply 
     text-xl
-}
+    bg-[#F0F0F0]
+    border-[#F0F0F0]
+    mx-2
+    shadow-md 
+} 
 
-body{
-  @apply
-  text-blue-950 
-    font-serif
-    container 
-    mx-auto
-    px-40
-    grid
-    grid-cols-1
-    col-auto
-    shadow-2xl 
-}
-
-p{
-  @apply 
-    text-justify 
-    mt-2
-    font-serif
-    items-center
-    justify-center
-}
-
-ul, ol{
-  /* max-width: 600px; */
+ul{
   list-style-type: disc;
-
-  @apply
-    items-center 
-    justify-center
-    mt-2
-    ml-10
-    font-light	
 }
 
 ol{
@@ -75,24 +134,31 @@ ol{
 
 a {
   @apply
-    text-black
-    hover:shadow-xl
+   text-black
+   hover:text-[#105033]
+    /* text-red-900
+    hover:text-red-600 */
 }
 
 img{
   @apply
-  rounded-lg 
-  shadow-xl
-  hover:shadow-2xl 
-  m-10
-  container 
-  mx-auto
-  px-0
-  grid
-  grid-cols-1
-  col-auto
-  size-[80%]
-  hover:size-[100%]
-  active:size-[110%]
-  min-h-40
+    rounded-lg 
+    shadow-xl
+    m-10
+    container 
+    mx-auto
+    px-0
+    grid
+    grid-cols-1
+    col-auto
+    size-[80%]
+    min-h-40
+}
+
+.header_pg_inicial{
+  @apply
+  bg-[#105033]
+   text-white 
+   py-[80px] 
+   px-[1200px]
 }

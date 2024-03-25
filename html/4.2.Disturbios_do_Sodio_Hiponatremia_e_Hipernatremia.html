@@ -7,108 +7,130 @@
     <meta name="description" content="Dr. André Assis - CARDIOLOGIA - CRM/RJ 52.85174-4" />
     <link href="../styles/output.css" rel="stylesheet">
     <link href="../styles/input.css" rel="stylesheet">
+    <script type="text/javascript" src="../script/script.js"></script>
 </head>
 
 <body>
-    <div>
-        <h1>Distúrbio do Magnésio (Hipomagnesemia)</h1>
+    <!--div class="topo_topo">
+        <h5>Dr. André Assis</h5>
+    </div-->
+    <div class="topo">
+        <nav class="">
+            <ul class="">
+                <a href="index.html">Inicio / </a>
+                <a href="index.html#4">Distúrbios hidroeletrolíticos / </a>
+                <a href="4.2.Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia.html">Distúrbios do Sódio (Hiponatremia e
+                    Hipernatremia)</a>
+            </ul>
+        </nav>
 
-        <div>
-            <h3>1. Hiponatremia (Na &lt 135 mEq/L). Na+ normal => 135 a 145 mEq/L</h3>
+        <h1>Distúrbio do Magnésio (Hipomagnesemia)</h1>
+    </div>
+
+    <div>
+        <h3 onclick="Conteudo('Hiponatremia')">Hiponatremia (Na &lt 135 mEq/L). Na+ normal => 135 a 145 mEq/L</h3>
+        <div style="display: none;" id="Hiponatremia" class="corpo_interior">
             <P>
                 <strong>Hiponatremia Leve (130-134):</strong> em geral assintomático, não precisa de tratamento.
             </P>
             <P>
-                <strong>Hiponatremia Moderada (120 a 129):</strong> deve ser tratada se houver sintomas como tonteira,
+                <strong>Hiponatremia Moderada (120 a 129):</strong> deve ser tratada se houver sintomas como
+                tonteira,
                 dor de cabeça,
                 enjoo, vômito, desorientação, hiporreflexia
             </P>
             <P>
-                <strong>Hiponatremia Grave (&lt 120):</strong> vômitos persistentes, sonolência, convulsões, arreflexia,
+                <strong>Hiponatremia Grave (&lt 120):</strong> vômitos persistentes, sonolência, convulsões,
+                arreflexia,
                 respiração de
                 Cheyne Stokes, parada respiratória, herniação tronco cerebral
             </P>
         </div>
 
-        <div>
-            <h3>ETIOLOGIA: Passo a passo da Hiponatremia</h3>
-            <P>
-                <strong>Repetir Na+ e diferenciar Aguda (&lt 48h) X Crônica (> 48h)</strong>
-                <br>
-                <strong>Glicemia (HGT):</strong> +2 mEq/L de Na+ para cada excesso de 100 mg/dL de glicemia
-                <br>
-                <strong>Avaliar IR (Cl&lt30)</strong> + Ingestão água livre e Tiazídicos (clortalidona,
-                hidroclorotiazida)
-                <br>
-                <strong>Retenção de líquido:</strong> I. Cardíaca e Cirrose=> hipoperfusão => hipotálamo secreta ADH =>
-                edema, TJP, ascite,
-                congestão
-            </P>
+        <h3 onclick="Conteudo('ETIOLOGIA')">ETIOLOGIA: Passo a passo da Hiponatremia</h3>
 
-            <div>
+        <div>
+            <div style="display: none;" id="ETIOLOGIA" class="corpo_interior">
+                <P>
+                    <strong>Repetir Na+ e diferenciar Aguda (&lt 48h) X Crônica (> 48h)</strong>
+                    <br>
+                    <strong>Glicemia (HGT):</strong> +2 mEq/L de Na+ para cada excesso de 100 mg/dL de glicemia
+                    <br>
+                    <strong>Avaliar IR (Cl&lt30)</strong> + Ingestão água livre e Tiazídicos (clortalidona,
+                    hidroclorotiazida)
+                    <br>
+                    <strong>Retenção de líquido:</strong> I. Cardíaca e Cirrose=> hipoperfusão => hipotálamo secreta ADH
+                    =>
+                    edema, TJP, ascite,
+                    congestão
+                </P>
+
                 <P>
                     Hipovolemia (avaliar NaU no spot urinário)
                 </P>
 
-                <ul>
+                <ul class="corpo_interior_lista">
                     <li>Perda renal (NaU > 20 mEq/L): Sd. Addison, Lesão intracraniana</li>
                     <li>Perda extra-renal (NaU &lt 20 mEq/L): diarreia, vômito, hipotensão ortostática,
                         taquicardia, mucosa seca</li>
                 </ul>
-            </div>
 
-            <div>
                 <P>
                     <strong>Euvolemia:</strong> avaliar osmolaridade urinária (avaliação indireta de dosagem ADH)
                 </P>
 
-                <ul>
+                <ul class="corpo_interior_lista">
                     <li>Osmolalidade urinária > 300 mOsm/Kg: SIDAH (medicamentos, doença SNC),
                         hipotireoidismo, Ins. Adrenal (supressão de cortisol após suspensão)</li>
                     <li>Osmolaridade (plasma): 2 × [Na+] + Glicose/18 (Normal: 275 - 290 mOsm/L)</li>
                 </ul>
             </div>
-
         </div>
 
         <div>
-            <h3>TRATAMENTO da Hiponatremia</h3>
-            <P>
-                <strong>Objetivos</strong>
-            </P>
-            <ul>
-                <li>Evitar piora evolutiva: restrição de água livre</li>
-                <li>Paciente com patologia SNC: cuidado com hipertensão intracraniana</li>
-                <li>Aliviar sintomas: náusea, vômito, tonteira, mais comuns nos quadros agudos</li>
-                <li>Correção segura: 6 mEq/L em 24 horas => evitar Sd. Desmielinização Osmótica (pode ter
-                    efeitos tardios)</li>
-            </ul>
+            <h3 onclick="Conteudo('TRATAMENTO')">Tratamento da Hiponatremia</h3>
 
-            <p><strong>Hiponatremia leve:</strong> em geral não precisa de tratamento. Restrição água livre.
-            </p>
+            <div style="display: none;" id="TRATAMENTO" class="corpo_interior">
+                <P>
+                    <strong>Objetivos</strong>
+                </P>
+                <ul class="corpo_interior_lista">
+                    <li>Evitar piora evolutiva: restrição de água livre</li>
+                    <li>Paciente com patologia SNC: cuidado com hipertensão intracraniana</li>
+                    <li>Aliviar sintomas: náusea, vômito, tonteira, mais comuns nos quadros agudos</li>
+                    <li>Correção segura: 6 mEq/L em 24 horas => evitar Sd. Desmielinização Osmótica (pode ter
+                        efeitos tardios)</li>
+                </ul>
 
-            <P>
-                <strong>Hiponatremia severa </strong>
-                (Na+ &lt 120) e Moderada com Sintomas
-            </P>
-            <ul>
-                <li>Salina Hipertônica 3% (NaCl): 890 ml de NaCl 0,9% + 110 ml de NaCl 20% </li>
-                <li>Se sinal de gravidade (convulsão, coma, Ins. respiratória) => Salina Hipertônica 3%: 100
-                    mL IV em 20 minutos => Medir Sódio sérico => suspender se elevação de 5 mEq/mL ou melhora dos
-                    sintomas => Pode repetir até 2 vezes (300 mL Salina hipertônica 3%)</li>
-                <li>Opção na Emergência: 50 mL Bicarbonato de Sódio 8,4%</li>
-                <li>Pacientes sem sintomas severos: corrigir até 6 mEq/L em 24 horas (Tabela abaixo)</li>
-                <li>Na+ a cada 4 horas => reavaliar </li>
-            </ul>
+                <p><strong>Hiponatremia leve:</strong> em geral não precisa de tratamento. Restrição água livre.
+                </p>
 
-            <img
-                src="../img/4.2.Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia/Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia_1.png"
-                alt="Hiponatremia: Correção com solução salina 3% (NaCl 3%)">
+                <P>
+                    <strong>Hiponatremia severa </strong>
+                    (Na+ &lt 120) e Moderada com Sintomas
+                </P>
+                <ul class="corpo_interior_lista">
+                    <li>Salina Hipertônica 3% (NaCl): 890 ml de NaCl 0,9% + 110 ml de NaCl 20% </li>
+                    <li>Se sinal de gravidade (convulsão, coma, Ins. respiratória) => Salina Hipertônica 3%: 100
+                        mL IV em 20 minutos => Medir Sódio sérico => suspender se elevação de 5 mEq/mL ou melhora dos
+                        sintomas => Pode repetir até 2 vezes (300 mL Salina hipertônica 3%)</li>
+                    <li>Opção na Emergência: 50 mL Bicarbonato de Sódio 8,4%</li>
+                    <li>Pacientes sem sintomas severos: corrigir até 6 mEq/L em 24 horas (Tabela abaixo)</li>
+                    <li>Na+ a cada 4 horas => reavaliar </li>
+                </ul>
+
+                <div class="imagens">
+                    <img class=""
+                        src="../img/4.2.Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia/Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia_1.png"
+                        alt="Hiponatremia: Correção com solução salina 3% (NaCl 3%)">
+
+                </div>
+            </div>
         </div>
 
         <div>
-            <h3>2. Hipernatremia (Na > 145 mEq/L) </h3>
-            <P>
+            <h3 onclick="Conteudo('Hipernatremia')"> Hipernatremia (Na > 145 mEq/L) </h3>
+            <P style="display: none;" id="Hipernatremia" class="corpo_interior">
                 <strong>Hipernatremia Leve (Na 146 a 150): </strong> sem sintomas
                 <br>
                 <strong>Hipernatremia Moderada (151 a 157): </strong>sede, enjoo, mal estar, reflexos vivos
@@ -118,55 +140,55 @@
             </P>
 
             <div>
-                <h4>ETIOLOGIA</h4>
+                <h4 onclick="Conteudo('ETIOLOGIA2')">ETIOLOGIA</h4>
+                <div style="display: none;" id="ETIOLOGIA2" class="corpo_interior">
+                    <p>
+                        <strong>Hipervolêmica:</strong> aumento ACT (soluções hipertônicas, CAD, PCR, IRA)
+                        <br>
+                        <strong>Normovolêmica:</strong> redução ACT (Diabetes Insipidus)
+                        <br>
+                        <strong>Hipovolêmica:</strong> redução ACT (baixa ingestão de água, Diarréia,
+                        sudorese, queimadura,
+                        diuréticos, hipodipsia)
+                    </p>
 
-                <p>
-                    <strong>Hipervolêmica:</strong> aumento ACT (soluções hipertônicas, CAD, PCR, IRA)
-                    <br>
-                    <strong>Normovolêmica:</strong> redução ACT (Diabetes Insipidus)
-                    <br>
-                    <strong>Hipovolêmica:</strong> redução ACT (baixa ingestão de água, Diarréia,
-                    sudorese, queimadura,
-                    diuréticos, hipodipsia)
-                </p>
-
-                <p>
-                    <strong>Crônica ( > 48h: maioria): </strong>redução ingestão de água (idoso acamado, p.ex)
-                    <br>
-                    <strong>Aguda (&lt 48h): </strong>Diabetes insipidus (doença aguda ou pós operatório)
-                </p>
+                    <p>
+                        <strong>Crônica ( > 48h: maioria): </strong>redução ingestão de água (idoso acamado, p.ex)
+                        <br>
+                        <strong>Aguda (&lt 48h): </strong>Diabetes insipidus (doença aguda ou pós operatório)
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <h4>AVALIAÇÃO IMPORTANTE</h4>
+        <h4 onclick="Conteudo('avaliacaoimportante')">AVALIAÇÃO IMPORTANTE</h4>
 
+        <div style="display: none;" class="corpo_interior" id="avaliacaoimportante">
             <p>Água corporal total (ACT): </p>
 
-            <ul>
+            <ul class="corpo_interior_lista">
                 <li>Idade &lt 65 a (H= 60% peso; M=50% peso), Idade > 65 a (H=50% peso, M=45% peso); Crianças
                     (60% peso)</li>
             </ul>
 
             <p>Déficit de água corporal = ACTx [(Na plama/140) -1]. Exemplo: </p>
 
-            <ul>
+            <ul class="corpo_interior_lista">
                 <li>H, 45a, 70Kg, Na+ 158 mEq/L ⇒ Def. ACT= >(70x0,6)x(158-140)/140 => 5400 mL </li>
                 <li>Em casos graves: volume a ser reposto em 24 horas</li>
             </ul>
 
-            <img
-                src="../img/4.2.Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia/caracteristicas_das_solucoes_em_relacao_ao_plasma_humano_2.png"
+            <img src="../img/4.2.Disturbios_do_Sodio_Hiponatremia_e_Hipernatremia/caracteristicas_das_solucoes_em_relacao_ao_plasma_humano_2.png"
                 alt="características das soluções em relação ao plasma humano.">
 
         </div>
 
-        <div>
-            <h4>TRATAMENTO da Hipernatremia</h4>
-
+        <h4 onclick="Conteudo('TRATAMENTOdaHipernatremia')">TRATAMENTO da Hipernatremia</h4>
+        
+        <div style="display: none;" id="TRATAMENTOdaHipernatremia" class="corpo_interior">
             <p><strong>Quadro Agudo (&lt 48h):</strong> instabilidade, alteração de sensório, convulsão</p>
 
-            <ul>
+            <ul class="corpo_interior_lista">
                 <li>Repor déficit de Água Livre em 24h</li>
                 <li>SG 5% (3-5 mL/Kg/h) => Reduzir para 1 mL/Kg/h se Na &lt 145 e manter até Na&lt140</li>
                 <li>Acompanhar Na+ e Glicose 3/3h => ajustar posologia com evolução</li>
@@ -176,7 +198,7 @@
 
             <p><strong>Quadro Crônico (>48h)::</strong> sem sinais de gravidade, mais comum</p>
 
-            <ul>
+            <ul class="corpo_interior_lista">
                 <li>Reposição lenta (8 mEq/L em 24h): SG 5% ou Salina 0,45%. Vide tabelas abaixo. </li>
                 <li>Acompanhar Na+ e Glicose 4/4h e ajustar se Na&lt 145 mEq/L</li>
             </ul>
@@ -188,10 +210,10 @@
 
         </div>
 
-        <div>
-            <h4>Fontes</h4>
-
-            <ol>
+        <h4 onclick="Conteudo('fontes')">Fontes</h4>
+        
+        <div style="display: none;" id="fontes" >
+            <ol class="corpo_interior_lista">
                 <li>O USO DE DROGAS VASOATIVAS EM TERAPIA INTENSIVA. Medicina, Ribeirão Preto, SimpÛsio:
                     MEDICINA INTENSIVA: I. INFECÇÃO E CHOQUE 31: 400-411, jul./set. 1998</li>
                 <li>Vasopressores e inotrópicos na Sala de Urgência. Revista Qualidade HC. FMRP-USP</li>
@@ -220,10 +242,10 @@
             </ol>
         </div>
 
-        <div>
-            <h4>Considerações</h4>
-
-            <ol>
+        <h4 onclick="Conteudo('consideracoes')">Considerações</h4>
+        
+        <div style="display: none;" id="consideracoes" >
+            <ol class="corpo_interior_lista">
                 <li>Os protocolos são usados como guias de tratamento para as doenças de forma genérica, não
                     específica ou exclusiva, e devem ser individualizados para cada paciente de acordo com avaliação
                     médica. </li>
@@ -242,7 +264,7 @@
     </div>
 </body>
 
-<footer>
+<footer class="rodape">
 
 </footer>
 
