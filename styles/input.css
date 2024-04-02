@@ -71,7 +71,6 @@ html{
     text-black
     font-sans 
     tracking-normal
-    /* bg-[#FFFFFF] */
 }
 
 p, ul, ol{
@@ -84,10 +83,12 @@ p, ul, ol{
 }
 
 h1, h2, h3, h4{
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+
   @apply 
     mb-1 
     mt-3
-    font-medium
 }
 
 h1{
@@ -100,7 +101,7 @@ h1{
 h2{
   @apply 
     text-3xl
-    bg-[#F0F0F0]
+    bg-[#DFEFF9]
     border-[#F0F0F0]
     mx-2
     shadow-md 
@@ -109,7 +110,7 @@ h2{
 h3{
   @apply 
     text-2xl
-    bg-[#F0F0F0]
+    bg-[#DFEFF9]
     border-[#F0F0F0]
     mx-2
     shadow-md 
@@ -118,7 +119,7 @@ h3{
 h4{
   @apply 
     text-xl
-    bg-[#F0F0F0]
+    bg-[#DFEFF9]
     border-[#F0F0F0]
     mx-2
     shadow-md 

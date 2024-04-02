@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    margin: 0%;
+    margin: 0;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(287.56deg, #FFFAFA 0%, #FFFFF0 100%)
@@ -11,20 +11,22 @@ body {
 
 .search-box {
     position: fixed;
-    top: 8%;
-    right: 5%;
+    top: 12%;
+    right: 2%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    background: #105033;
+    background: #2b6d4f;
     height: 40px;
     border-radius: 40px;
     padding: 10px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     font-family: serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
+    width: 300px;
 }
 
 header {
@@ -37,27 +39,29 @@ header {
 .search-text {
     background: none;
     border: 0;
-    outline: 0;
+    outline: 0; 
     padding: 0;
-    font-size: 16px;
+    color: #FFFFF0;
+    font-size: 18px;
+    line-height: 40px ;
     transition: 0.4s;
-    width: 0;
+}
+
+::-webkit-input-placeholder{
+    color: #fffff0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .search-btn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background: #2b6d4f;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-.search-box:hover>.search-text {
-    width: 200px;
-    padding-left: 20px;
-}
 
 .banner {
     height: 400px;
@@ -69,10 +73,17 @@ header {
     height: 400px;
     width: 280px;
     object-fit: cover;
-    transition: 0.3s;
+    transition: 0.4s;
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
 }
 
+
+ul li a:hover::after {
+  opacity: 1;
+}
 body {
     font-style: normal;
     font-weight: normal;
@@ -96,7 +107,7 @@ body {
     width: auto;
     padding-left: 1%;
     padding-right: 0%;
-    background-image: url("../img/footer2.png");
+    background-image: url("../img/footer3.png");
     background-size: auto;
 }
 
@@ -107,3 +118,45 @@ body {
     border: 0.5px solid #105033;
 }
 
+.arrow-container {
+    display: flex;
+    align-items: center;
+ }
+ .arrow {
+    display: inline-block;
+    margin-right: 30px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+ }
+ .right-arrow {
+    transform: rotate(45deg);
+ }
+ .left-arrow {
+    transform: rotate(-135deg);
+ }
+ .up-arrow {
+    transform: rotate(-45deg);
+ }
+ .down-arrow {
+    transform: rotate(135deg);
+ }
+ .top-narrow-arrow {
+    transform: rotate(-45deg) skew(-15deg, -15deg);
+ }
+ .top-wide-arrow {
+    transform: rotate(-45deg) skew(7deg, 7deg);
+ }
+ .top-left-arrow {
+    transform: rotate(-90deg) skew(-10deg, -10deg);
+ }
+ .top-right-arrow {
+    transform: rotate(0) skew(-10deg, -10deg);
+ }
+ .bottom-left-arrow {
+    transform: rotate(180deg) skew(-10deg, -10deg);
+ }
+ .bottom-right-arrow {
+    transform: rotate(90deg) skew(-10deg, -10deg);
+ }
