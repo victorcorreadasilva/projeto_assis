@@ -2365,6 +2365,11 @@ video {
   max-width: 100%;
 }
 
+.displayArrowNone{
+  order: 2;
+  opacity: 0;
+}
+
 /* INICIO Formatações para todas as páginas - TEXTO*/
 
 p,

@@ -12,6 +12,15 @@
     max-width: 100%;
 }
 
+.displayArrowNone{
+    position: absolute;
+    top: 0;
+    
+    opacity: 0;
+    
+    
+}
+
 
 /* INICIO Formatações para todas as páginas - TEXTO*/
 
