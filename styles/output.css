@@ -2358,15 +2358,18 @@ video {
 /* Formatações  */
 
 .container {
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 60%;
 }
 
 .contentImage {
   max-width: 100%;
 }
 
-.displayArrowNone{
-  order: 2;
+.displayArrowNone {
+  position: absolute;
+  top: 0;
   opacity: 0;
 }
 
@@ -2382,11 +2385,14 @@ ol {
   font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: capitalize;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 0.25rem;
-  margin-top: 0.75rem
+  margin-top: 0.75rem;
 }
 
 h1 {
@@ -2463,10 +2469,12 @@ html {
 }
 
 body {
-  background: linear-gradient(287.56deg, #FFFAFA 0%, #FFFFF0 100%);
+  background: linear-gradient(287.56deg, #fffafa 0%, #fffff0 100%);
+  width: 100vw;
 }
 
 .topo {
+  height: 20%;
   margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -2519,7 +2527,9 @@ body {
   padding-right: 2rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 60%;
 }
 
 .corpo_interior_lista {
@@ -2561,7 +2571,9 @@ body {
   padding-right: 2.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 60%;
 }
 
 .ajuste_de_pagina_imagens_center {
@@ -2593,8 +2605,11 @@ a:hover {
   bottom: -0.5rem;
   width: 100%;
   background-image: url("../img/footer3.png");
+  display: flex;
+  justify-content: center;
+  height: 20%;
   margin-top: 1.25rem;
-  padding: 2.5rem
+  padding: 2.5rem;
 }
 
 /* INICIO Formatações para página inicial */
@@ -2649,8 +2664,6 @@ a:hover {
   margin: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 80%;
   min-height: 10rem;
   border-radius: 0.5rem;
   padding-left: 0px;
@@ -2658,7 +2671,9 @@ a:hover {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 60%;
 }
 
 .header_pg_inicial {
@@ -2677,6 +2692,10 @@ header {
   top: 0;
   left: 0;
   z-index: 4;
+}
+
+figure {
+  text-align: center;
 }
 
 .search-box {
@@ -2704,7 +2723,7 @@ header {
   border: 0;
   outline: 0;
   padding: 0;
-  color: #FFFFF0;
+  color: #fffff0;
   font-size: 18px;
   line-height: 40px;
   transition: 0.4s;
