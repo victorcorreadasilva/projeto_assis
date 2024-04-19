@@ -29,7 +29,9 @@
     </div>
 
     <div>
-        <h3 onclick="Conteudo('Hipocalemia')">Hipocalemia (K&lt 3,5 mEq/L) <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="Hipocalemia">Hipocalemia (K&lt 3,5 mEq/L) <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div style="display: none;" id="Hipocalemia" class="corpo_interior">
             <p>
@@ -46,7 +48,9 @@
             </p>
         </div>
 
-        <h3 onclick="Conteudo('ETIOLOGIA')">ETIOLOGIA <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="ETIOLOGIA">ETIOLOGIA <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div style="display: none;" id="ETIOLOGIA" class="corpo_interior">
             <p>
@@ -58,7 +62,9 @@
             </p>
         </div>
 
-        <h3 onclick="Conteudo('TRATAMENTO')">TRATAMENTO <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="TRATAMENTO">TRATAMENTO <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div style="display: none;" id="TRATAMENTO" class="corpo_interior">
             <p>
@@ -78,8 +84,10 @@
             </p>
         </div>
 
-        <h3 onclick="Conteudo('reposicaoparental')">Reposição Parenteral (IV): sintomáticos (K+ &lt 3 mEq/L). <i
-                class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="reposicaoparental">Reposição Parenteral (IV): sintomáticos (K+ &lt 3 mEq/L).
+            <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div style="display: none;" id="reposicaoparental" class="corpo_interior">
             <p> Monitorização: Cardíaca + Pressão (PNI) + Oximetria + ECG</p>
@@ -116,7 +124,9 @@
             </ul>
         </div>
 
-        <h3 onclick="Conteudo('Hipercalemia')">Hipercalemia (K > 4,5 mEq/L) <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="Hipercalemia">Hipercalemia (K > 4,5 mEq/L) <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div style="display: none;" id="Hipercalemia" class="corpo_interior">
             <p>
@@ -138,7 +148,9 @@
                 alt="Hipercalemia (k > 4,5 mEq/L)">
         </div>
 
-        <h3 onclick="Conteudo('ETIOLOGIA2')">ETIOLOGIA <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="ETIOLOGIA2">ETIOLOGIA <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
         <div>
             <div style="display: none;" id="ETIOLOGIA2" class="corpo_interior">
@@ -153,9 +165,11 @@
                 </p>
             </div>
 
-            <h3>TRATAMENTO <i class="fa-solid fa-arrow-down"></i></h3>
+            <h3 data-conteudo="TRATAMENTO2">TRATAMENTO <i class="fa-solid fa-arrow-down "></i>
+                <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+            </h3>
 
-            <div class="corpo_interior">
+            <div style="display: none" id="TRATAMENTO2" class="corpo_interior">
                 <p>
                     <strong>Instabilidade, paresia, alteração ECG ou Sintomáticos (>6,5)</strong>
                     <br>
@@ -204,44 +218,59 @@
         </div>
 
         <div>
-            <h3>Hipercalemia (K+ 9,3 mmol/L) <i class="fa-solid fa-arrow-down"></i></h3>
-            <h3>ECG: QRS alargado (bizarro), onda T apiculada, aumento intervalo PR <i
-                    class="fa-solid fa-arrow-down"></i></h3>
+            <h3 data-conteudo="bizarro">Hipercalemia (K+ 9,3 mmol/L) <i class="fa-solid fa-arrow-down "></i>
+                <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+            </h3>
 
-            <div class="corpo_interior">
+            <div style="display: none" id="bizarro" class="corpo_interior">
+                <h3>ECG: QRS alargado (bizarro), onda T apiculada, aumento intervalo PR
+                </h3>
+
                 <img src="../img/4.1.Disturbios_do_Potassio_Hipocalemia_e_Hipercalemia/hipercalemia_02.png"
                     alt="Hipercalemia (K+ 9,3 mmol/L)">
             </div>
 
-            <h3>Hipercalemia (K+ 7,0 mmol/L) <i class="fa-solid fa-arrow-down"></i></h3>
-            <h3>ECG: Onda T apiculada, simétrica, elevada <i class="fa-solid fa-arrow-down"></i></h3>
+            <h3 data-conteudo="onda_t">Hipercalemia (K+ 7,0 mmol/L) <i class="fa-solid fa-arrow-down "></i>
+                <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+            </h3>
 
-            <div class="corpo_interior">
+            <div style="display: none" id="onda_t" class="corpo_interior">
+                <h3>ECG: Onda T apiculada, simétrica, elevada</h3>
+
                 <img src="../img/4.1.Disturbios_do_Potassio_Hipocalemia_e_Hipercalemia/hipercalemia_03.png"
                     alt="Hipercalemia (K+ 7,0 mmol/L)">
             </div>
 
-            <h3>Hipercalemia (K+ 9,0 mmol/L) <i class="fa-solid fa-arrow-down"></i></h3>
-            <h3>ECG: Onda T apiculada (gigante), QRS padrão “Sine wave” <i class="fa-solid fa-arrow-down"></i></h3>
+            <h3 data-conteudo="gigante">Hipercalemia (K+ 9,0 mmol/L) <i class="fa-solid fa-arrow-down "></i>
+                <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+            </h3>
 
-            <div class="corpo_interior">
+            <div style="display: none" id="gigante" class="corpo_interior">
+                <h3>ECG: Onda T apiculada (gigante), QRS padrão “Sine wave”
+                </h3>
+
                 <img src="../img/4.1.Disturbios_do_Potassio_Hipocalemia_e_Hipercalemia/hipercalemia_04.png"
                     alt="Hipercalemia (K+ 9,0 mmol/L)">
             </div>
 
-            <h3>Hipercalemia (K+ 8,1 mmol/L) <i class="fa-solid fa-arrow-down"></i></h3>
-            <h3>ECG: Onda P muito pequena (DII), dissociação AV (BAVT), ritmo juncional (escape) <i
-                    class="fa-solid fa-arrow-down"></i></h3>
+            <h3 data-conteudo="DII">Hipercalemia (K+ 8,1 mmol/L) <i class="fa-solid fa-arrow-down "></i>
+                <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+            </h3>
 
-            <div class="corpo_interior">
+            <div style="display: none" id="DII" class="corpo_interior">
+                <h3>ECG: Onda P muito pequena (DII), dissociação AV (BAVT), ritmo juncional (escape)
+                </h3>
+
                 <img src="../img/4.1.Disturbios_do_Potassio_Hipocalemia_e_Hipercalemia/hipercalemia_05.png"
                     alt="4. Hipercalemia (K+ 8,1 mmol/L)">
             </div>
         </div>
 
-        <h3>Fontes <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="Fontes">Fontes <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
 
-        <div class="corpo_interior">
+        <div style="display: none" id="Fontes" class="corpo_interior">
             <ol class="corpo_interior_lista">
                 <li>
                     O USO DE DROGAS VASOATIVAS EM TERAPIA INTENSIVA. Medicina, Ribeirão Preto, SimpÛsio:
@@ -288,7 +317,9 @@
             </ol>
         </div>
 
-        <h3 onclick="Conteudo('consideracoes')">Considerações <i class="fa-solid fa-arrow-down"></i></h3>
+        <h3 data-conteudo="consideracoes">Considerações <i class="fa-solid fa-arrow-down "></i>
+            <i class="fa-solid fa-arrow-up displayArrowNone"></i>
+        </h3>
         <div style="display: none;" id="consideracoes" class="corpo_interior">
             <ol class="corpo_interior_lista">
                 <li>

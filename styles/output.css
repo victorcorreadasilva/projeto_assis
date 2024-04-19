@@ -2428,7 +2428,7 @@ h3 {
   --tw-border-opacity: 1;
   border-color: rgb(240 240 240 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(223 239 249 / var(--tw-bg-opacity));
+  background-color: rgb(144 238 144 / var(--tw-bg-opacity));
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -2474,18 +2474,13 @@ body {
 }
 
 .topo {
-  height: 20%;
   margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 243 246 / var(--tw-bg-opacity));
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+  background-color: rgb(152 251 152 / var(--tw-bg-opacity));
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .corpo_interior {
@@ -2694,8 +2689,9 @@ header {
   z-index: 4;
 }
 
-figure {
-  text-align: center;
+figure * {
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .search-box {
@@ -2779,6 +2775,15 @@ figure {
   -o-object-fit: cover;
      object-fit: cover;
   border: 0.5px solid #105033;
+}
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Fim Formatações para página inicial */

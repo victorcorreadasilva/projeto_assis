@@ -17,7 +17,6 @@
 .displayArrowNone {
   position: absolute;
   top: 0;
-
   opacity: 0;
 }
 
@@ -54,7 +53,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
 
-  @apply text-2xl bg-[#DFEFF9] border-[#F0F0F0] mx-2 shadow-md;
+  @apply text-2xl bg-[#90EE90] border-[#F0F0F0] mx-2 shadow-md;
 }
 
 h3 i {
@@ -82,8 +81,7 @@ body {
 }
 
 .topo {
-  height: 20%;
-  @apply bg-[#F4F3F6] pb-10 pt-10 rounded-t-3xl flex flex-col px-5 mb-10;
+  @apply bg-[#98FB98] pb-2 pt-2 rounded-t-3xl mb-10;
 }
 
 .corpo_interior {
