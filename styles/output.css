@@ -2597,52 +2597,8 @@ body {
 }
 
 .corpo_interior_lista {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .corpo_interior_lista {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .corpo_interior_lista {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .corpo_interior_lista {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .corpo_interior_lista {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .corpo_interior_lista {
-    max-width: 1536px;
-  }
-}
-
-.corpo_interior_lista {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  width: 100%;
-  margin: 0 auto;
-  height: 60%;
-  padding-top: 8rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .corpo_interior_lista {
-    padding-top: 20rem;
-  }
 }
 
 .ajuste_de_pagina_imagens_center {

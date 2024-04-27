@@ -160,7 +160,7 @@ body {
 }
 
 .corpo_interior_lista {
-  @apply container px-10;
+  @apply px-10;
 }
 
 .ajuste_de_pagina_imagens_center {
