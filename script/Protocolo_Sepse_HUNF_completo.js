@@ -1,10 +1,10 @@
-let arrowElements = [];
+let arrowSepseElements = [];
 
 async function populateArrowElementsArray() {
   await new Promise(function (resolve) {
     document.addEventListener("DOMContentLoaded", function () {
       let elements = document.querySelectorAll(".fa-arrow-down, .fa-arrow-up");
-      arrowElements = Array.from(elements);
+      arrowSepseElements = Array.from(elements);
       resolve();
     });
   });
@@ -13,7 +13,6 @@ async function populateArrowElementsArray() {
 async function toggleArrowClass() {
   await populateArrowElementsArray();
   document.querySelectorAll("h3").forEach(function (h3) {
-    console.log(h3);
     h3.addEventListener("click", function () {
       let arrowDown = h3.querySelector(".fa-arrow-down");
       let arrowUp = h3.querySelector(".fa-arrow-up");
@@ -23,7 +22,6 @@ async function toggleArrowClass() {
           arrowDown.classList.remove("displayArrowNone");
           arrowUp.classList.add("displayArrowNone");
         } else {
-          console.log(arrowDown.classList.add("displayArrowNone"));
           arrowDown.classList.add("displayArrowNone");
           arrowUp.classList.remove("displayArrowNone");
         }
@@ -37,5 +35,3 @@ async function toggleArrowClass() {
     });
   });
 }
-
-toggleArrowClass();
