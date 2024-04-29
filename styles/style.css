@@ -147,13 +147,13 @@ body {
 .topo {
   position: fixed;
   width: 100%;
-  height: 22vh;
+  height: 70px;
   top: 0px;
   background-color: #98fb98;
   margin-bottom: 2rem;
 }
 
-.topo + div {
+.topo+div {
   margin-bottom: 2rem;
 }
 
@@ -254,6 +254,11 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+
+  nav ul a {
+    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
+  }
+
   p,
   h3,
   li {
@@ -426,17 +431,19 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+
   p,
   h3,
   li {
     font-size: 24px;
   }
+
   .corpo_dos_cards {
     grid-template-columns: 1fr;
   }
 
   .topo {
-    height: 22vh;
+    height: 8 0px;
     padding: 2rem;
   }
 
@@ -458,15 +465,18 @@ img {
 
   .banner {
     max-width: 100%;
+    border-radius: 20px;
   }
 
   h3 h3:hover {
     box-shadow: none;
     transition: none;
   }
+
   * {
     animation: none !important;
   }
+
   a {
     font-size: 45px;
   }
