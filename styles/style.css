@@ -4,6 +4,10 @@
 
 /* Formatações  */
 
+.card_e_logo {
+  @apply rounded-lg shadow-xl;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
