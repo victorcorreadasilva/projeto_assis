@@ -2701,6 +2701,16 @@ img {
 @media screen and (max-width: 1000px) {
   nav ul a {
     font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  div h1 {
+    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
   }
 
   p,
@@ -2879,6 +2889,20 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+  nav ul a {
+    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  div h1 {
+    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
   p,
   h3,
   li {
@@ -2890,7 +2914,7 @@ img {
   }
 
   .topo {
-    height: 8 0px;
+    height: auto;
     padding: 2rem;
   }
 
