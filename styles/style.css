@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Formatações  */
+/* ------- FIM FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
+
+body {
+  /* background: linear-gradient(287.56deg, #fffafa 0%, #fffff0 100%); */
+  background-color: white;
+  width: 100vw;
+}
+
+/* .card:hover {
+  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
+  background-color: #e0dede;
+} */
 
 .card_e_logo {
   @apply rounded-lg shadow-xl;
@@ -25,86 +36,6 @@
   opacity: 0;
 }
 
-nav {
-  text-transform: uppercase;
-  display: flex;
-}
-
-nav ul a:hover {
-  text-decoration: underline;
-}
-
-span {
-  margin-bottom: 15px;
-}
-
-span a {
-  text-transform: uppercase;
-}
-
-p,
-ul,
-ol {
-  @apply text-justify items-center justify-center m-2 font-normal;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-a {
-  @apply text-black hover:text-[#105033];
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
-
-  @apply mb-1 mt-3;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 18px;
-
-  @apply text-3xl bg-[#DFEFF9] border-[#F0F0F0] mx-2 shadow-md;
-}
-
-h3 {
-  cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-
-  @apply text-2xl bg-[#b2ecb2] border-[#F0F0F0] mx-2 shadow-md;
-}
-
-h3 h3:hover {
-  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
-  transition: all 0.5s ease-in-out;
-}
-
-h4 {
-  font-size: 14px;
-
-  @apply text-xl bg-[#DFEFF9] border-[#F0F0F0] mx-2 shadow-md;
-}
-
-p {
-  font-size: 12px;
-}
-
 .h3Img {
   background: none;
   border: none;
@@ -114,15 +45,10 @@ p {
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
   max-width: 600px;
-}
-
-.card:hover {
-  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
-  background-color: #e0dede;
 }
 
 .listItem {
@@ -130,19 +56,6 @@ p {
   margin-right: 2rem;
 }
 
-html {
-  @apply text-black font-sans tracking-normal;
-}
-
-body {
-  background: linear-gradient(287.56deg, #fffafa 0%, #fffff0 100%);
-  width: 100vw;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.topo h1 {
-  padding-left: 2.5rem;
-}
 
 .topo {
   position: fixed;
@@ -183,8 +96,6 @@ body {
 
   @apply mt-5 p-10;
 }
-
-/* INICIO Formatações para página inicial */
 
 .corpo_dos_cards {
   display: grid;
@@ -238,7 +149,8 @@ img {
 }
 
 .banner {
-  max-width: 300px;
+  max-width: 200px;
+  border-radius: 20px;
 }
 
 .centralizar {
@@ -253,226 +165,19 @@ img {
   flex-direction: row-reverse;
 }
 
+/* ------- FIM FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
+
+/* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
-
-  nav ul a {
-    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
-
-  div h1 {
-    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
-
-  p,
-  h3,
-  li {
-    font-size: 24px;
-  }
 
   .corpo_dos_cards {
     grid-template-columns: 1fr;
     gap: 0px;
   }
 
-  h1 {
-    font-size: 32px;
-  }
-
-  .card {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    gap: 4rem;
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-  }
-
-  h3 h3:hover {
-    box-shadow: none;
-    transition: none;
-  }
-
-  * {
-    animation: none !important;
-  }
-
-  /* a {
-    font-size: 45px;
-  }  */
-
-  .container {
-    padding-top: 20rem;
-  }
-
-  figure {
-    padding-top: 2rem;
-  }
-}
-
-/* Estilos para telas menores ou iguais a 1024px */
-@media screen and (max-width: 1024px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-
-/* Estilos para telas menores ou iguais a 1440px */
-@media screen and (max-width: 1440px) {
-  body {
-    background-color: lightyellow;
-  }
-}
-
-/* Não utilizaddo no momento */
-
-/*  
-.giflogo {
-  position: fixed;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  height: 200px;
-  width: 200px;
-  top: 4%;
-}  */
-
-/* .cropped1 {
-  width: 200px;
-  height: 20px;
-  object-fit: cover;
-  border: 0.5px solid #105033;
-} */
-
-/* .search-box {
-  position: fixed;
-  top: 12%;
-  right: 2%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  background: #2b6d4f;
-  height: 40px;
-  border-radius: 40px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  width: 300px;
-  display: none;
-}
-
-.search-text {
-  background: none;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  color: #fffff0;
-  font-size: 18px;
-  line-height: 40px;
-  transition: 0.4s;
-}
-
-.search-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #2b6d4f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-::-webkit-input-placeholder {
-  color: #fffff0;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .banner:hover {
-  height: 400px;
-  width: 280px;
-  object-fit: cover;
-  transition: 0.4s;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-} */
-
-.giflogo {
-  position: fixed;
-  top: 6%;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  height: 200px;
-  width: 200px;
-}
-
-.cropped1 {
-  width: 200px;
-  height: 20px;
-  object-fit: cover;
-  border: 0.5px solid #105033;
-}
-
-.centralizar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  object-fit: contain;
-}
-
-.reverse-direction {
-  flex-direction: row-reverse;
-}
-
-@media screen and (max-width: 1000px) {
-
-  nav ul a {
-    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
-
-  div h1 {
-    font-size: calc(16px + (24 - 16) * (20vw - 400px) / (800 - 400));
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
-
-  p,
-  h3,
-  li {
-    font-size: 24px;
-  }
-
-  .corpo_dos_cards {
-    grid-template-columns: 1fr;
-  }
-
   .topo {
     height: auto;
     padding: 2rem;
-  }
-
-  h1 {
-    font-size: 32px;
   }
 
   .card {
@@ -481,29 +186,25 @@ img {
     align-items: center;
     max-width: 100%;
     margin-top: 1rem;
-    gap: 0;
-    background-color: #e0dede;
+    gap: 4rem;
+    /* background-color: #e0dede; */
     padding: 1rem;
     text-align: center;
   }
 
-  .banner {
-    max-width: 100%;
-    border-radius: 20px;
+  .card img {
+    width: 100%;
+    height: 100%;
   }
 
-  h3 h3:hover {
-    box-shadow: none;
-    transition: none;
+  .banner {
+    max-width: 50%;
+    border-radius: 20px;
   }
 
   * {
     animation: none !important;
   }
-
-  /* a {
-    font-size: 45px;
-  }  */
 
   .container {
     padding-top: 20rem;
@@ -512,26 +213,94 @@ img {
   figure {
     padding-top: 2rem;
   }
-
-  .giflogo {
-    top: 4%;
-  }
-
-  nav ul {
-    text-decoration: underline;
-  }
 }
 
-/* Estilos para telas menores ou iguais a 1024px */
-@media screen and (max-width: 1024px) {
-  body {
-    background-color: lightgreen;
-  }
+/* ------- FIM Estilos para telas menores ou iguais a 1000px -------*/
+
+/* ------- INICIO FORMATAÇÕES PARA TEXTO ------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+span {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: justify;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  word-wrap: normal;
+  line-break: normal;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
 }
 
-/* Estilos para telas menores ou iguais a 1440px */
-@media screen and (max-width: 1440px) {
-  body {
-    background-color: lightyellow;
-  }
+h3 {
+  background-color: #b2ecb2;
+  border: #F0F0F0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
+
+h3:hover {
+  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-style: solid;
+  cursor: pointer;
+  font-size: 110%;
+}
+
+a:active {
+  text-decoration-color: #b2ecb2;
+  font-size: 110%;
+}
+
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: numeric;
+}
+
+span {
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+
+/* ------- FIM FORMATAÇÕES PARA TEXTO ------- */
