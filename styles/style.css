@@ -8,6 +8,7 @@ body {
   /* background: linear-gradient(287.56deg, #fffafa 0%, #fffff0 100%); */
   background-color: white;
   width: 100vw;
+  height: 80vh;
 }
 
 /* .card:hover {
@@ -21,9 +22,9 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 6rem auto;
   height: 60%;
-  padding-top: 8rem;
+  min-height: 75vh;
 }
 
 .contentImage {
@@ -56,17 +57,15 @@ body {
   margin-right: 2rem;
 }
 
-
 .topo {
   position: fixed;
   width: 100%;
   height: 70px;
   top: 0px;
   background-color: #b2ecb2;
-  margin-bottom: 2rem;
 }
 
-.topo+div {
+.topo + div {
   margin-bottom: 2rem;
 }
 
@@ -86,13 +85,22 @@ body {
   @apply flex flex-col items-center pt-10;
 }
 
+.title {
+  display: grid;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.title * {
+  font-weight: bold;
+}
+
 .footer {
-  bottom: -0.5rem;
-  width: 100%;
   background-image: url("../img/footer3.png");
   display: flex;
   justify-content: center;
-  height: 20%;
+  height: 20vh;
 
   @apply mt-5 p-10;
 }
@@ -169,7 +177,6 @@ img {
 
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
-
   .corpo_dos_cards {
     grid-template-columns: 1fr;
     gap: 0px;
@@ -177,6 +184,12 @@ img {
 
   .topo {
     height: auto;
+    padding: 2rem;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 2rem;
     padding: 2rem;
   }
 
@@ -206,10 +219,6 @@ img {
     animation: none !important;
   }
 
-  .container {
-    padding-top: 20rem;
-  }
-
   figure {
     padding-top: 2rem;
   }
@@ -231,7 +240,7 @@ li,
 ul,
 ol,
 span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   text-align: justify;
   word-spacing: normal;
@@ -246,7 +255,7 @@ span {
 
 h3 {
   background-color: #b2ecb2;
-  border: #F0F0F0;
+  border: #f0f0f0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
