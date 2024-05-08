@@ -24,27 +24,12 @@ body {
   @apply rounded-lg shadow-xl;
 }
 
-.container-test {
+.container-main {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
-}
-
-
-/* .container {
-  width: 100%;
-  margin: 6rem auto;
-  height: 60%;
-  min-height: 75vh;
-} */
-
-.container-leo {
-  width: 100%;
-  margin: 6rem auto;
-  height: 60%;
-  min-height: 75vh;
 }
 
 .contentImage {
@@ -111,7 +96,6 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
 }
-
 
 .footer {
   background-image: url("../img/footer3.png");
@@ -204,12 +188,6 @@ img {
     padding: 2rem;
   }
 
-  nav ul {
-    list-style: none;
-    margin: 2rem;
-    padding: 2rem;
-  }
-
   .card {
     flex-direction: column;
     justify-content: center;
@@ -238,6 +216,10 @@ img {
 
   figure {
     padding-top: 2rem;
+  }
+
+  footer p {
+    text-align: center;
   }
 }
 
@@ -309,10 +291,14 @@ ul,
 ol {
   padding-left: 1rem;
   margin-left: 1rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
-ul li ul li{
+ul li li {
+  list-style: circle;
+}
+
+ul li ul li {
   list-style: circle;
 }
 
