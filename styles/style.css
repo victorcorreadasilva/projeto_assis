@@ -221,6 +221,14 @@ img {
   footer p {
     text-align: center;
   }
+
+  ul li,
+  ol li,
+  li li,
+  ol ul li {
+    margin-right: 0rem;
+  }
+
 }
 
 /* ------- FIM Estilos para telas menores ou iguais a 1000px -------*/
