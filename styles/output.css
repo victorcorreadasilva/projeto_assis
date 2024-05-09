@@ -2388,13 +2388,6 @@ body {
   padding-left: 1rem;
 }
 
-/* .container-leo {
-  width: 100%;
-  margin: 6rem auto;
-  height: 60%;
-  min-height: 75vh;
-} */
-
 .contentImage {
   max-width: 100%;
 }
@@ -2592,18 +2585,6 @@ img {
     padding: 2rem;
   }
 
-  nav ul {
-    list-style: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .card {
     flex-direction: column;
     justify-content: center;
@@ -2632,6 +2613,17 @@ img {
 
   figure {
     padding-top: 2rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  ul li,
+  ol li,
+  li li,
+  ol ul li {
+    margin-right: 0rem;
   }
 }
 
@@ -2706,6 +2698,10 @@ ol {
   margin-right: 2rem;
 }
 
+ul li li {
+  list-style: circle;
+}
+
 ul li ul li {
   list-style: circle;
 }
@@ -2719,7 +2715,7 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.5rem;
-  padding-left: 2px;
+  padding-left: 0.7rem;
   margin-left: 0px;
   margin-right: 8px;
   margin-top: 12px;
