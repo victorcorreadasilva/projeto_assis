@@ -15,13 +15,22 @@ body {
   height: 80vh;
 }
 
-/* .card:hover {
-  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
-  background-color: #e0dede;
-} */
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
 
 .card_e_logo {
-  @apply rounded-lg shadow-xl;
+  border-radius: 0.5rem;
+  width: 180px;
+}
+
+.card_e_logo:hover {
+  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
+  background-color: #e0dede;
 }
 
 .container-main {
@@ -32,34 +41,10 @@ body {
   padding-left: 1rem;
 }
 
-.contentImage {
-  max-width: 100%;
-}
-
 .displayArrowNone {
   position: absolute;
   top: 0;
   opacity: 0;
-}
-
-.h3Img {
-  background: none;
-  border: none;
-  padding: 0;
-  box-shadow: none;
-}
-
-.card {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-  max-width: 600px;
-}
-
-.listItem {
-  display: block;
-  margin-right: 2rem;
 }
 
 .topo {
@@ -74,29 +59,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.corpo_interior {
-  padding-top: 10px;
-
-  @apply container px-8 py-1;
-}
-
-.corpo_interior_lista {
-  @apply px-10;
-}
-
-.ajuste_de_pagina_imagens_center {
-  margin-top: 6%;
-
-  @apply flex flex-col items-center pt-10;
-}
-
-.title {
-  display: grid;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-}
-
 .footer {
   background-image: url("../img/footer3.png");
   display: flex;
@@ -106,15 +68,17 @@ body {
   @apply mt-5 p-10;
 }
 
-.corpo_dos_cards {
+.container-pagina-inicial {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  padding-top: 10rem;
   justify-content: center;
   align-items: center;
-  max-width: 80vw;
-  margin: 0 auto;
+  padding-top: 8rem;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
 
 .header_pg_inicial {
@@ -142,53 +106,37 @@ header h1 {
   margin: auto;
 }
 
-figure * {
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-img {
-  width: 50vw;
-  height: auto;
-}
-
-.imgSmall {
-  width: 15vw;
-  height: auto;
-}
-
 .banner {
   max-width: 200px;
   border-radius: 20px;
-}
-
-.centralizar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  object-fit: contain;
-}
-
-.reverse-direction {
-  flex-direction: row-reverse;
-}
-
-.itens-em-linha {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 600px;
-  gap: 2.5rem;
 }
 
 /* ------- FIM FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
-  .corpo_dos_cards {
+
+  .container-pagina-inicial {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
     grid-template-columns: 1fr;
-    gap: 0px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  nav {
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  figure {
+    padding: 0rem;
+    margin: 0rem;
   }
 
   .topo {
@@ -202,28 +150,9 @@ img {
     align-items: center;
     max-width: 100%;
     margin-top: 1rem;
-    gap: 4rem;
-    /* background-color: #e0dede; */
+    gap: 0rem;
     padding: 1rem;
     text-align: center;
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .banner {
-    max-width: 50%;
-    border-radius: 20px;
-  }
-
-  * {
-    animation: none !important;
-  }
-
-  figure {
-    padding-top: 2rem;
   }
 
   footer p {
@@ -237,6 +166,11 @@ img {
     margin-right: 0rem;
   }
 
+  header h1 {
+    font-size: x-large;
+    color: #fffffa;
+    margin: auto;
+  }
 }
 
 /* ------- FIM Estilos para telas menores ou iguais a 1000px -------*/
