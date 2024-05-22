@@ -2357,6 +2357,18 @@ video {
 
 /* ------- FIM FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
+figure {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.itens-em-linha {
+  display: flex;
+  -moz-columns: auto;
+       columns: auto;
+  gap: 2rem;
+}
+
 nav {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -2487,9 +2499,14 @@ header h1 {
     margin-bottom: 0rem;
   }
 
+  img {
+    width: auto;
+    height: auto;
+  }
+
   figure {
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
   }
 
   .topo {
