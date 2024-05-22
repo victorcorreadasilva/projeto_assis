@@ -2,17 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ------- FIM FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
+/* ------- INICIO FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
 figure {
   padding: 0.5rem;
   margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .itens-em-linha {
+  padding: 0.5rem;
+  margin-left: 23%;
   display: flex;
-  columns: auto;
-  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 nav {
@@ -127,6 +132,14 @@ header h1 {
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
 
+  .itens-em-linha {
+    padding: 0.5rem;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .container-pagina-inicial {
     display: grid;
     justify-content: center;
@@ -152,7 +165,7 @@ header h1 {
 
   figure {
     padding: 0.1rem;
-    margin: 0.1rem;
+    margin: 0.2rem;
   }
 
   .topo {
