@@ -2429,13 +2429,13 @@ body {
   align-items: center;
 }
 
-.footer {
+footer {
   background-image: url("../img/footer3.png");
   display: flex;
   justify-content: center;
   height: 20vh;
-  margin-top: 1.25rem;
   padding: 2.5rem;
+  margin-top: 20%;
 }
 
 .container-pagina-inicial {
