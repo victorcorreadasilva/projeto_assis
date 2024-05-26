@@ -2357,6 +2357,11 @@ video {
 
 /* ------- INICIO FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
+.itens-em-grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 figure {
   padding: 0.5rem;
   margin: 0.5rem;
@@ -2398,6 +2403,7 @@ body {
 }
 
 .card_e_logo:hover {
+  transform: scale(1.1);
   box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
   background-color: #e0dede;
 }
