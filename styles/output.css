@@ -2465,8 +2465,20 @@ footer {
   width: 100%;
   top: 0px;
   margin-bottom: 2rem;
-  height: 80px;
+  height: 120px;
   background-color: #105033;
+}
+
+.header_pg_inicial_img1 {
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+}
+
+.header_pg_inicial_img2 {
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+  max-width: 10rem;
+  max-height: 5rem;
 }
 
 header {
@@ -2492,6 +2504,29 @@ header h1 {
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 
 @media screen and (max-width: 1000px) {
+  .header_pg_inicial {
+    height: 80px;
+  }
+
+  .header_pg_inicial h1 {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_pg_inicial_img1 {
+    margin-top: 0.1rem;
+    max-width: 5.1rem;
+    max-height: 5.1rem;
+  }
+
+  .header_pg_inicial_img2 {
+    margin-top: 0.1rem;
+    margin-right: 0.7rem;
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+
   .itens-em-linha {
     padding: 0.5rem;
     margin-left: 1%;
