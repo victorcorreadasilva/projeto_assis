@@ -4,6 +4,23 @@
 
 /* ------- INICIO FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
+#install-button {
+  /* position: static; */
+  padding: 30px 50px;
+  background-color: #105033;
+  color: #fff;
+  font-size: xx-large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+#install-button:hover {
+  transform: scale(1.1);
+  box-shadow: -3px 3px 33px -9px rgba(0, 0, 0, 0.36);
+}
+
 .itens-em-grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
