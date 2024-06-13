@@ -16,7 +16,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "unimedserrana.protocolosmedicos.com",
+    "start_url": "index.html",
     "scope": "."
 
 }
