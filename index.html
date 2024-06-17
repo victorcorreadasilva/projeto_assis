@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,34 +7,94 @@
   <meta name="description" content="Dr. André Assis - CRM/RJ 52.85174-4" />
   <title>Protocolos Médicos</title>
   <script type="text/javascript" src="./script/script.js"></script>
+  <script type="text/javascript" src="./script/login.js"></script>
   <link href="./styles/output.css" rel="stylesheet" />
   <link href="./styles/style.css" rel="stylesheet" />
+  <link href="./styles/login.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <header class="header_pg_inicial">
+  <div class="container">
 
-    <img class="header_pg_inicial_img1"
-      style="margin-top: 0.1rem; max-width: 5.1rem; max-height: 5.1rem; width: 5.1rem; height: 5.1rem; object-fit: contain;"
-      src="./img/pagina_inicial/unimed-1.png" />
+    <input type="checkbox" id="flip" />
 
-    <h1>Protocolos Médicos</h1>
+    <div class="cover">
 
-    <img class="header_pg_inicial_img2"
-      style="margin-top: 0.1rem; margin-right: 0.7rem; max-width: 5rem; max-height: 5rem; width: 5rem; height: 5rem; object-fit: contain;"
-      src="./img/pagina_inicial/unimed-2.png" />
+      <div class="front">
+        <img src="./img/login/frontImg.png" alt="" />
 
-  </header>
+        <div class="text"></div>
 
-  <main class="container-pagina-inicial" style="display: flex; align-items: center;">
+      </div>
 
-    <section>
-      <a href="./html/pagina_instalar_app.html">
-        <h1 style="color: red;">Tela de Login (teste) - CLique para baixar o app</h1>
-      </a>
-    </section>
+      <div class="back">
 
-  </main>
+        <img class="backImg" src="./img/login/frontImg.png" alt="" />
+
+        <div class="text">
+
+          <span class="text-1">
+            Complete miles of journey
+            <br />
+            with one step
+          </span>
+
+          <span class="text-2">
+            Let's get started
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="forms">
+
+      <div class="form-content">
+
+        <div class="login-form">
+
+          <div class="title">Protocolos Médicos</div>
+          
+          <form action="#">
+
+            <div class="input-boxes">
+
+              <div class="input-box">
+
+                <i class="fas fa-envelope"></i>
+
+                <input type="text" placeholder="Usuário" required />
+
+              </div>
+
+              <div class="input-box">
+
+                <i class="fas fa-lock"></i>
+
+                <input type="password" placeholder="Senha" required />
+
+              </div>
+
+              <div class="button input-box">
+
+                <input type="submit" value="Entrar" />
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 

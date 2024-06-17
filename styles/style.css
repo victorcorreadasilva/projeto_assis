@@ -5,7 +5,6 @@
 /* ------- INICIO FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
 #install-button {
-  /* position: static; */
   padding: 30px 50px;
   background-color: #105033;
   color: #fff;
