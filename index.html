@@ -7,7 +7,6 @@
   <meta name="description" content="Dr. André Assis - CRM/RJ 52.85174-4" />
   <title>Protocolos Médicos</title>
   <script type="text/javascript" src="./script/script.js"></script>
-  <script type="text/javascript" src="./script/login.js"></script>
   <link href="./styles/output.css" rel="stylesheet" />
   <link href="./styles/style.css" rel="stylesheet" />
   <link href="./styles/login.css" rel="stylesheet" />
@@ -35,7 +34,7 @@
         <div class="text">
 
           <span class="text-1">
-            Complete miles of journey
+            Complete miles of journey 
             <br />
             with one step
           </span>
@@ -57,7 +56,7 @@
         <div class="login-form">
 
           <div class="title">Protocolos Médicos</div>
-          
+
           <form action="#">
 
             <div class="input-boxes">
@@ -66,7 +65,7 @@
 
                 <i class="fas fa-envelope"></i>
 
-                <input type="text" placeholder="Usuário" required />
+                <input id="userEmail" type="text" placeholder="Usuário" required />
 
               </div>
 
@@ -74,13 +73,13 @@
 
                 <i class="fas fa-lock"></i>
 
-                <input type="password" placeholder="Senha" required />
+                <input id="userPassword" type="password" placeholder="Senha" required />
 
               </div>
 
               <div class="button input-box">
 
-                <input type="submit" value="Entrar" />
+                <input type="submit" value="Entrar" id="signIn" />
 
               </div>
 
@@ -95,6 +94,64 @@
     </div>
 
   </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      signOut
+
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCc7nZHSXNzJsblxRX7Pti7QTY_NI4mPCY",
+      authDomain: "teste-2ecc3.firebaseapp.com",
+      projectId: "teste-2ecc3",
+      storageBucket: "teste-2ecc3.appspot.com",
+      messagingSenderId: "174418788668",
+      appId: "1:174418788668:web:05b0ccfb941499f7181e39",
+      measurementId: "G-LTHV8567EZ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const userEmail = document.querySelector("#userEmail");
+    const userPassword = document.querySelector("#userPassword");
+    const authForm = document.querySelector(".forms");
+    const signInButton = document.querySelector("#signIn");
+
+    const userSignIn = async () => {
+      const signInEmail = userEmail.value;
+      const signInPassword = userPassword.value;
+
+      signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user)
+          window.location.href = "../html/pagina_instalar_app.html";
+          alert("Login realizado!")
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorCode + errorMessage)
+          alert("Usuário ou senha não encontrado")
+        })
+    }
+
+    signIn.addEventListener('click', userSignIn);
+
+  </script>
 
 </body>
 
