@@ -18,19 +18,33 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
     // Atualize sua interface de usuário para notificar o usuário sobre a possibilidade de instalação
     const installButton = document.getElementById('install-button');
-    installButton.style.display = 'block';
+    //installButton.style.display = 'block';
 
     installButton.addEventListener('click', (e) => {
         // Ocultar o botão de instalação
         installButton.style.display = 'none';
+
+        // altera o texto do botton
+        //installButton.textContent = 'Aguarde a instalação por uns instantes e em seguida verifique na sua galeria de apps.';
+        //installButton.disabled = true;
+
         // Mostre o prompt de instalação
         deferredPrompt.prompt();
+
         // Espere o usuário responder ao prompt
         deferredPrompt.userChoice.then((choiceResult) => {
             if (choiceResult.outcome === 'accepted') {
                 console.log('Usuário aceitou instalar o PWA');
+
+                window.location.href = "../html/pagina_inicial.html";
+
+                alert('Aguarde a instalação por uns instantes e em seguida abra o Web App na sua galeria de apps.');
+
             } else {
+
                 console.log('Usuário recusou instalar o PWA');
+                
+                alert('Usuário recusou instalar o Web App.');
             }
             deferredPrompt = null;
         });

@@ -11,7 +11,7 @@
     "orientation": "natural",
     "icons": [
         {
-            "src": "./img/pagina_inicial/unimed-1.png",
+            "src": "./img/pagina_inicial/unimed-3.png",
             "sizes": "48x48 72x72 96x96 128x128 256x256",
             "type": "image/png"
         }
