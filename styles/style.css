@@ -30,7 +30,7 @@ figure {
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .itens-em-linha {
@@ -179,7 +179,6 @@ header h1 {
 
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
-
   .header_pg_inicial {
     height: 80px;
   }
@@ -247,6 +246,7 @@ header h1 {
   figure {
     padding: 0.1rem;
     margin: 0.2rem;
+    align-items: center;
   }
 
   .topo {
