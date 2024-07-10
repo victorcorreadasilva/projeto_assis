@@ -4,6 +4,10 @@
 
 /* ------- INICIO FORMATAÇÕES GERAL (menos texto e telas menores) ------- */
 
+.fa-house {
+  font-size: 2rem;
+}
+
 #install-button {
   padding: 30px 50px;
   background-color: #105033;
@@ -179,6 +183,10 @@ header h1 {
 
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
+  .fa-house {
+    font-size: 1rem;
+  }
+  
   .header_pg_inicial {
     height: 80px;
   }
