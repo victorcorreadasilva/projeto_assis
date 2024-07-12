@@ -183,6 +183,12 @@ header h1 {
 
 /* ------- INICIO Estilos para telas menores ou iguais a 1000px -------*/
 @media screen and (max-width: 1000px) {
+
+  .itens-em-grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .fa-house {
     font-size: 1rem;
   }
