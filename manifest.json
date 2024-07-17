@@ -11,9 +11,9 @@
     "orientation": "natural",
     "icons": [
         {
-            "src": "./img/pagina_inicial/unimed-1.png",
+            "src": "./img/logos/UNIMED-MARCA_HUNF_vertical_fundotransparente.PNG",
             "sizes": "48x48 72x72 96x96 128x128 256x256",
-            "type": "image/png"
+            "type": "image/PNG"
         }
     ],
     "start_url": "./html/pagina_inicial.html",
