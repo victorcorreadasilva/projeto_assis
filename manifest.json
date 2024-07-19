@@ -7,11 +7,11 @@
   "display": "standalone",
   "purpose": "any",
   "background_color": "#3C9A66",
-  "theme_color": "#3C9A66",
+  "theme_color": "#1c8053",
   "orientation": "natural",
   "icons": [
     {
-      "src": "./img/logos/.png",
+      "src": "./img/logos/unimed-2-1548x1548v2.png",
       "sizes": "512x512",
       "type": "image/png"
     }
