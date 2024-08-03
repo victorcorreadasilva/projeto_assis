@@ -6,146 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Dr. André Assis - CRM/RJ 52.85174-4" />
   <title>Protocolos Médicos</title>
-  <script type="text/javascript" src="./script/script.js"></script>
-  <link href="./styles/output.css" rel="stylesheet" />
   <link href="./styles/style.css" rel="stylesheet" />
   <link href="./styles/login.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
   <div class="container">
-
-    <input type="checkbox" id="flip" />
-
     <div class="cover">
 
       <div class="front">
         <img src="./img/login/frontImg.png" alt="" />
-
         <div class="text"></div>
-
       </div>
 
       <div class="back">
-
         <img class="backImg" src="./img/login/frontImg.png" alt="" />
-
-        <div class="text">
-
-          <span class="text-1">
-            Complete miles of journey
-            <br />
-            with one step
-          </span>
-
-          <span class="text-2">
-            Let's get started
-          </span>
-
-        </div>
-
       </div>
 
     </div>
 
     <div class="forms">
-
       <div class="form-content">
+        <div class="login-form" style="font-size: 10pt; text-align: center;">
 
-        <div class="login-form">
+          <p style="text-align: center;">
 
-          <div class="title">Protocolos Médicos</div>
+            <strong>Entre em contato para obter acesso a plataforma.</strong>
+            <br />
+            <br />
 
-          <form action="#">
+            <strong>Dr. André Assis Rodrigues</strong>
+            <br />
+            <i>CRM/RJ: 52.85174-4</i>
 
-            <div class="input-boxes">
+            <br />
+            <a href="mailto:contato@drandreassis.com.br">
+              <strong style="font-size: 13pt;">contato@drandreassis.com.br</strong>
+            </a>
+            <br />
+            <i>&copy; 2024 - Todos os direitos reservados</i>
 
-              <div class="input-box">
+          </p>
 
-                <i class="fas fa-envelope"></i>
+          <br />
+          <br />
 
-                <input id="userEmail" type="text" placeholder="Usuário" required />
-
-              </div>
-
-              <div class="input-box">
-
-                <i class="fas fa-lock"></i>
-
-                <input id="userPassword" type="password" placeholder="Senha" required />
-
-              </div>
-
-              <div class="button input-box">
-
-                <input type="submit" value="Entrar" id="signIn" />
-
-              </div>
-
-            </div>
-
-          </form>
+          <p style="font-size: 10pt; text-align: center;">
+            <i>
+              Plataforma desenvolvida por
+              <a href="mailto:victorcorreadasilva00@gmail.com">Victor Corrêa</a> e
+              <a href="mailto:rimesleo@gmail.com">Leonardo Rimes</a>
+            </i>
+          </p>
 
         </div>
-
       </div>
-
     </div>
 
   </div>
-
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-    import {
-      getAuth,
-      createUserWithEmailAndPassword,
-      signInWithEmailAndPassword,
-      signOut,
-    } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyAzYnqVU38R525Hdg4WniCnCXNZmVNUUjE",
-      authDomain: "protocolosmedicos-37b48.firebaseapp.com",
-      projectId: "protocolosmedicos-37b48",
-      storageBucket: "protocolosmedicos-37b48.appspot.com",
-      messagingSenderId: "1009330574690",
-      appId: "1:1009330574690:web:6c5a36bd0fe6210a65483b",
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const userEmail = document.querySelector("#userEmail");
-      const userPassword = document.querySelector("#userPassword");
-      const signInButton = document.querySelector("#signIn");
-
-      const userSignIn = async () => {
-        const signInEmail = userEmail.value;
-        const signInPassword = userPassword.value;
-
-        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
-          .then((userCredential) => {
-            const user = userCredential.user;
-            console.log(user);
-            window.location.href = "./html/pagina_instalar_app.html";
-            alert("Login realizado!");
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorCode + errorMessage);
-            alert("Usuário ou senha não encontrado");
-          });
-      };
-
-      signInButton.addEventListener("click", userSignIn);
-    });
-  </script>
 
 </body>
 
