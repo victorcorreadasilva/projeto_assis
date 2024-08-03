@@ -4,7 +4,7 @@ Projeto Web desenvolvido em HTML / CSS / Javascript, utilizando também o framew
 O projeto se destina a reunir protocolos médicos que foram escritos pelo Dr. André Assis Rodrigues.
 <br/>
 <br/>
-Link da versão publicada: <i>www.protocolosmedicos.com</i> 
+Link da versão publicada: <i>www.enfermagem.protocolosmedicos.com</i> 
 <br/>
 <br/>
 <br/>

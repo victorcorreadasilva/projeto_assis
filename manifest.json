@@ -1,7 +1,7 @@
 {
-  "name": "Procotolos",
-  "short_name": "Procotolos",
-  "description": "Protocolos médicos desenvolvidos pelo Dr. André Assis CRM/RJ 52.85174-4.",
+  "name": "Enfermagem",
+  "short_name": "Enfermagem",
+  "description": "Protocolos de enfermagem desenvolvidos pelo Dr. André Assis CRM/RJ 52.85174-4.",
   "lang": "pt-BR",
   "dir": "ltr",
   "display": "standalone",
