@@ -125,6 +125,13 @@
       const signInButton = document.querySelector("#signIn");
 
       const userSignIn = async () => {
+        if (userEmail.value === "medico.Unimed") {
+          userEmail.value = "medicoUnimed@protocolosmedicos.com"
+        }
+        else if (userEmail.value === "enfermagem.Unimed") {
+          userEmail.value = "enfermagem@protocolosmedicos.com"
+        }
+
         const signInEmail = userEmail.value;
         const signInPassword = userPassword.value;
 
