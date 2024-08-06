@@ -13,7 +13,8 @@
     {
       "src": "./img/logos/unimed-2-1548x1548v2.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "./html/pagina_inicial.html",
