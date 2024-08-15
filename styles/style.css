@@ -87,6 +87,26 @@ body {
   margin-top: 70px;
 }
 
+.container-passo-a-passo {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  margin-top: 9rem;
+}
+
+.step {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.illustration {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
 .displayArrowNone {
   position: absolute;
   top: 0;

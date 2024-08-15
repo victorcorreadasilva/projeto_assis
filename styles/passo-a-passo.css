@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.instructions-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.illustration {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
+}
+ 
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 90%;
+}
