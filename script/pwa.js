@@ -1,12 +1,4 @@
-// Verificação do sistema operacional
-function redirectIfIos() {
-    const userAgent = navigator.userAgent;
-
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        window.location.href = "../html/passo-a-passo.html";
-    }
-}
-
+//Carrega o Service Worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         navigator.serviceWorker.register('../script/service-worker.js').then(function (registration) {
@@ -30,9 +22,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     //installButton.style.display = 'block';
 
     installButton.addEventListener('click', (e) => {
-        // Executa a verificação assim que o script carrega
-        redirectIfIos();
-
         // Ocultar o botão de instalação
         installButton.style.display = 'none';
 
@@ -66,3 +55,15 @@ window.addEventListener('beforeinstallprompt', (e) => {
 window.addEventListener('appinstalled', (evt) => {
     console.log('PWA instalado com sucesso!');
 });
+
+// Verificação do sistema operacional
+function redirectIfIos() {
+    const userAgent = navigator.userAgent;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "../html/passo-a-passo.html";
+    }
+}
+
+// Executa a verificação assim que o script carrega
+redirectIfIos();
