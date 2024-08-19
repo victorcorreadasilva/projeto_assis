@@ -1,3 +1,4 @@
+//Carrega o Service Worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         navigator.serviceWorker.register('../script/service-worker.js').then(function (registration) {
@@ -43,7 +44,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
             } else {
 
                 console.log('Usuário recusou instalar o PWA');
-                
+
                 alert('Usuário recusou instalar o Web App.');
             }
             deferredPrompt = null;
