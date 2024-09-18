@@ -142,12 +142,34 @@ body {
 }
 
 footer {
-  background-image: url("../img/footer3.png");
+  /* background-image: url("../img/footer3.png"); */
+  background-color: #ECF2F3;
+  /* Garante que a imagem cubra todo o footer */
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  height: 20vh;
+  align-items: center;
+  flex-direction: column;
+  /* Deixe o tamanho do footer dinâmico de acordo com o conteúdo */
+  height: auto;
   padding: 2.5rem;
   margin-top: 20%;
+  /* Centraliza o texto */
+  text-align: center;
+  /* Previne que o conteúdo saia da área do footer */
+  overflow: hidden;
+  /* Impede que o conteúdo ultrapasse a largura da tela */
+  max-width: 100%;
+  /* Garante que o padding seja incluído no tamanho total */
+  box-sizing: border-box;
+}
+
+address {
+  /* Impede que o conteúdo ultrapasse a largura */
+  max-width: 100%;
+  /* Quebra as palavras longas se necessário */
+  word-wrap: break-word;
 }
 
 .container-pagina-inicial {
