@@ -387,7 +387,7 @@ span {
   line-break: normal;
   font-weight: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 25px;
   padding-left: 0.5rem;
   padding-top: 0.2rem;
   margin-left: 0.5rem;
